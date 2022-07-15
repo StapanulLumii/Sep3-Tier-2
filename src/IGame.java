@@ -5,9 +5,9 @@ public interface IGame {
 
     ArrayList<Game> Games = new ArrayList<Game>();
 
-    public Games AddId(int id);
+    public Games AddId(int GameId);
 
-    public Games RemoveId(int id);
+    public Games RemoveId(int Gameid);
     public Games AddName(String Name);
     public Games RemoveName(String Name);
     public Games AddDescription(String Description);
@@ -19,5 +19,5 @@ public interface IGame {
     public Games AddCategory();
     public Games RemoveCategory();
 
-    public  Games GetGames();
+    public  Games GetGames(int GameId);
 }
